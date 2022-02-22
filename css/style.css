@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(#f8fafa,#f19820, #003057);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header{
+    text-align: center;
+    width: 100%;
+    margin-top: 50px;
+}
+header img{
+    width: 200px;
+    padding: 15px;
+}
+.principal{
+    display: flex;
+    flex-flow: column;
+    border: 3px;
+    border-style:outset;
+    margin-left: 10px;
+    margin-right: 10px;
+    justify-content: center;
+    text-align: center;
+    margin-top: 100px;
+    border-radius: 15px;
+}
+.cadastro{
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 15px;
+    text-shadow: 5px 5px 5px grey;
+}
+.preferencia{
+    font-size: 35px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow: 5px 5px 5px grey;
+    margin-top: 25px;
+    padding: 10px;
+}
+/* responsividade */
+ @media(min-width:414px){
+    header img{
+        width: 200px;
+    }
+    .principal{
+    margin-top: 80px;
+    }
+}@media(min-width:688px){
+    .principal{
+        margin-left: 60px;
+        margin-right: 60px;
+        margin-top: 100px;
+    }
+}
+@media(min-width:768px){
+    .principal{
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-top: 100px;
+    }
+    .cadastro{
+        font-size: 40px;
+    }
+    .preferencia{
+        font-size: 50px;
+    }
+}
+@media(min-width:1000px){
+    .principal{
+        margin-left: 90px;
+        margin-right: 90px;
+        margin-top: 80px;
+    }
+    .cadastro{
+        font-size: 50px
+    }
+    .preferencia{
+        margin-top: 50px;
+        font-size: 60px;
+    }
+}
